@@ -44,4 +44,17 @@ int main(){
 		vec.push_back(br);
 
 	}
-	
+ }
+
+    siz = vec.size();
+    cout<<"\n\nPecatenje na vektorot: "<<endl;
+	for(int i = 0; i < siz; i++){
+		cout<<vec.at(i)<<" ";
+	}
+    cout<<endl;
+
+	sort(vec.begin(), vec.end()); //Sortiranje
+    cout<<"\n\nPecatenje na sortiran vektor: "<<endl;
+	for(int i = 0; i < siz; i++){
+		cout<<vec.at(i)<<" ";
+	}	
