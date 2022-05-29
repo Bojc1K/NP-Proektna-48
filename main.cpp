@@ -58,3 +58,11 @@ int main(){
 	for(int i = 0; i < siz; i++){
 		cout<<vec.at(i)<<" ";
 	}	
+	cout<<"\n\nVnesete datum na raganje: ";
+	for(int i = 0; i < 3; i++){
+		cin>>br;
+		vec.push_back(br);
+	}
+	ofstream outFile("INKI882.Proekt3.txt"); //Otvoranje nov file
+	for (const auto &e : vec) outFile << e << "\n"; //Pecatenje
+}
